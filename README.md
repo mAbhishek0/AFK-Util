@@ -1,4 +1,4 @@
-# AFK Bot
+# AFK Util
 
 A Windows desktop app that simulates WASD keyboard inputs to keep your system awake and prevent idle timeouts. Uses the Win32 `SendInput` API with hardware scan codes so it works even in DirectX games.
 
