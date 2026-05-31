@@ -1,8 +1,16 @@
 # AFK Bot
 
-Simulates WASD keyboard inputs at the hardware scan-code level to keep your PC from going idle. Works with DirectX games since it uses `SendInput` with `KEYEVENTF_SCANCODE`.
+A Windows desktop app that simulates WASD keyboard inputs to keep your system awake and prevent idle timeouts. Uses the Win32 `SendInput` API with hardware scan codes so it works even in DirectX games.
 
 Built with **WinUI 3** and **.NET 8**.
+
+## Screenshots
+
+<p align="center">
+  <img src="afk1.png" width="45%" />
+  &nbsp;&nbsp;
+  <img src="afk2.png" width="45%" />
+</p>
 
 ## Features
 
@@ -11,3 +19,15 @@ Built with **WinUI 3** and **.NET 8**.
 - 5-second countdown before starting
 - Async input loop, doesn't freeze the UI
 - Matches system light/dark theme
+
+## Requirements
+
+- Windows 10 1809+ / Windows 11
+- .NET 8.0 SDK
+- Windows App SDK Runtime
+
+## Build
+
+```
+dotnet build AfkBot.csproj -c Release -r win-x64
+```
